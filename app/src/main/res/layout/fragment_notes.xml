@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Data binding block for the NotesViewModel -->
+    <data>
+        <variable
+            name="viewModel"
+            type="evtomak.iu.edu.notesapp.NotesViewModel" />
+    </data>
+
+    <!-- Root layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Input field for the note title -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"/>
+
+        <!-- Input field for the note description/content -->
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Description"
+            android:gravity="top"
+            android:inputType="textMultiLine"/>
+
+        <!-- Button to save the note -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE" />
+    </LinearLayout>
+</layout>
