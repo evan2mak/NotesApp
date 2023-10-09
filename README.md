@@ -4,7 +4,7 @@ This project is a simple notes app that allows the user to create notes containi
 
 The functionality is described in more detail below:
 
-# Main Screen (Add Note)
+## Main Screen (Add Note)
 
 [X] The user opens the application and sees a UI interface with various components.
 
@@ -14,13 +14,13 @@ The functionality is described in more detail below:
 
 [X] The user will be navigated to the note creation screen.
 
-# Note Creation Screen
+## Note Creation Screen
 
 [X] The user can now create a note by inputting a title and a description.
 
 [X] When the user is done, they can click the "Save" button, and navigate back to the main screen.
 
-# Main Screen (Update/Delete Note)
+## Main Screen (Update/Delete Note)
 
 [X] After creating a note, the user will now see the title of the note along with a delete image icon next to the note.
 
@@ -34,11 +34,11 @@ The functionality is described in more detail below:
 
 [X] If the user confirms, the note is deleted. If the user cancels, nothing happens; the note remains in the list.
 
-#
+##
 
 The following functions/extensions are implemented:
 
-# HomeFragment
+## HomeFragment
 
 The home fragment is responsible for displaying a list of notes and provides the UI for interactions.
 
@@ -58,7 +58,7 @@ onDeleteClick:
 
 This function handles the note deletion via a confirmation dialog (Delete Dialog Fragment).
 
-# DeleteDialogFragment
+## DeleteDialogFragment
 
 The delete dialog fragment class is responsible for showing a confirmation prompt before deleting a note.
 
@@ -66,23 +66,23 @@ onCreateDialog:
 
 This function provides the functionality for prompting a message when the delete button is clicked.
 
-# MainActivity
+## MainActivity
 
 The main activity class helps set up the application and initializes the view model for use in other areas.
 
-# Note
+## Note
 
 The note class is a data class representing a note in the database.
 
-# NoteDao
+## NoteDao
 
 The note dao class (DAO = Database Access Object) is an interface for CRUD operations on the note entity. The operations include insert, update, delete, and getters for note manipulation.
 
-# NoteDatabase
+## NoteDatabase
 
 This is a room database for storing notes. It either creates the database or reuses the databases depending on existing data within the database.
 
-# NotesAdapter
+## NotesAdapter
 
 The notes adapter is an adapter for displaying notes in a recycler view.
 
@@ -106,7 +106,7 @@ NoteDiffCallback (class):
 
 This class is helps calculate the difference between two lists.
 
-# NotesFragment
+## NotesFragment
 
 The notes fragment class is a fragment to display and edit a single note.
 
@@ -118,7 +118,7 @@ onDestroyView:
 
 This function cleans the binding when the view is destroyed.
 
-# NotesViewModel
+## NotesViewModel
 
 The notes view model is a view model for managing notes using the note dao.
 
@@ -138,7 +138,7 @@ getNoteByID:
 
 This function retrieves a specific note by its ID.
 
-# NotesViewModelFactory
+## NotesViewModelFactory
 
 The notes view model factory creates a new instance of a notes view model.
 
